@@ -14,7 +14,6 @@ const services = [
       "Evaluating AI outputs: accuracy, bias, and hallucination detection",
       "Security and governance fundamentals",
     ],
-    tag: "Starting with Excel Sports",
   },
   {
     icon: (
@@ -78,9 +77,11 @@ export default function Services() {
               className="group relative rounded-2xl border border-border bg-surface p-8 transition-all hover:border-accent/40 hover:bg-surface-light"
             >
               {/* Tag */}
-              <span className="absolute right-6 top-6 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent-light">
-                {service.tag}
-              </span>
+              {service.tag && (
+                <span className="absolute right-6 top-6 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent-light">
+                  {service.tag}
+                </span>
+              )}
 
               {/* Icon */}
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent-light transition-colors group-hover:bg-accent/20">

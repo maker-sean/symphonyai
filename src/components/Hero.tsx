@@ -8,11 +8,6 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
-        {/* Eyebrow */}
-        <div className="animate-fade-in-up mb-6 inline-flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-sm text-muted">
-          <span className="inline-block h-2 w-2 rounded-full bg-accent-light animate-pulse" />
-          Now partnering with Excel Sports Management
-        </div>
 
         {/* Headline */}
         <h1 className="animate-fade-in-up animate-delay-100 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -46,15 +41,15 @@ export default function Hero() {
         {/* Trust indicators */}
         <div className="animate-fade-in-up animate-delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted/70">
           <span className="flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
             Enterprise-Grade Security
           </span>
           <span className="flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
             SOC 2 Aligned
           </span>
           <span className="flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
             White-Glove Onboarding
           </span>
         </div>
