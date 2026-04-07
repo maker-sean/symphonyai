@@ -5,10 +5,30 @@ import { useState, type FormEvent } from "react";
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: Wire to your backend / email service (e.g., Resend, SendGrid, Formspree)
-    setSubmitted(true);
+    
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mgopdoqy", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        console.error("Failed to submit the form.");
+      }
+    } catch (error) {
+      console.error("An error occurred during form submission:", error);
+    }
   }
 
   return (
